@@ -423,14 +423,14 @@ a {
 }
 
 .feature__images {
-    width: 100%;
-    height: 491px;
+    max-width: 100%;
     position: relative;
+    padding-bottom: 121px;
 }
 
 .feature__img {
-    position: absolute;
     width: 512px;
+    max-width: 100%;
     height: 370px;
     filter: drop-shadow(0px 14px 28px rgba(0, 0, 0, 0.07));
     border-radius: 6px;
@@ -438,8 +438,10 @@ a {
 }
 
 .feature__img:last-child {
+    position: absolute;
     width: 332px;
     height: 370px;
+    object-fit: cover;
     bottom: 0;
     right: 0;
 }
